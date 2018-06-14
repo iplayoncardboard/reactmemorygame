@@ -4,7 +4,8 @@ import './Container.css'
 import Background from './beerBG.jpg'
 
 const bgImg = {
-    backgroundImage:`url(${Background}`
+    backgroundImage:`url(${Background}`,
+    backgroundRepeat: 'round'
 }
 
 let Container = props => (
