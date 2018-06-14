@@ -1,0 +1,46 @@
+html{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+    color: pink;
+}
+
+nav{
+    background-color: rgb(50,47,44);
+    display: block;
+    width:100%;
+    margin-top:0;
+}
+
+.containter{
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    grid-template-rows: minmax(100px, 1fr);
+    grid-template-columns: repeat(4, 1fr); 
+    background-image: url('../images/beerBG.jpg');
+    background-repeat: round;
+}
+
+.header{
+    height: 200px;
+    background-color: rgba(0, 0, 0, .5);
+    margin-top:0px;
+}
+
+.wrapper{
+    margin: 0px;
+    padding: 0px;
+}
+
+#root{
+    margin: 0px;
+    padding: 0px;
+}

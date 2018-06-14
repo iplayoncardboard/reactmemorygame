@@ -2,16 +2,41 @@
     {
       "id": 1,
       "name": "Surley Pentagram",
-      "image": "./images/pentagram.jpg"
+      "image": "./assets/images/pentagram.jpg"
     },
     {
       "id": 2,
       "name": "San Tan Sex Panther",
-      "image": "./images/sex_panther.png"
+      "image": "./assets/images/sex_panther.png"
     },
     {
       "id": 3,
       "name": "Orange Blossom",
-      "image": "./images/orange_blossom.png"
+      "image": "./assets/images/orange_blossom.png"
+    },
+    {
+      "id": 4,
+      "name": "Arrogant Bastard Ale",
+      "image": "./assets/images/bastard.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Lagunitas Little Sumpin",
+      "image": "./assets/images/little_sumpin.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Breckenridge Brewery Vanilla Porter",
+      "image": "./assets/images/breckenridge-brewery-vanilla-porter.gif"
+    },
+    {
+      "id": 7,
+      "name": "Bent Paddle",
+      "image": "./assets/images/bent-paddle.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Rogue Voodoo Doughnut",
+      "image": "./assets/images/rogue-voodoo.jpg"
     }
 ]

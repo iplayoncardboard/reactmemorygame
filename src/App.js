@@ -94,12 +94,11 @@ componentDidMount(){
         score= {this.state.score}
         highScore = {this.state.highScore}
         message = {this.state.navMessage}
-
         />
-        <Container>
         <Header>
         Micro Brew Memeory
        </Header>
+       <Container>
        {this.state.gameArray.map((card) =>(
         <Card 
           id = {card.id}
