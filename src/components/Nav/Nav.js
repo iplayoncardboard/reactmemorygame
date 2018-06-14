@@ -7,8 +7,8 @@ const Nav = props =>(
     <nav>
         I'm the fucking Nav Bar
         <p>{props.message}</p>
-        <p>{props.highScore}</p>
-        <p>{props.score}</p>
+        <p>High Score {props.highScore}</p>
+        <p>Score {props.score}</p>
     </nav>
 )
 

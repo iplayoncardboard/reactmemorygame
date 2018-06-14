@@ -27,37 +27,31 @@ getRand = (upper) => {
 }
 
 
-createGameArray = array =>{
-  console.log`Array ${array}`
-  console.log(this.getRand(12));
-}
 
 createGameArray = array =>{
   const newArray = [];
-  console.log(`newArray = ${newArray}`)
   while(newArray.length < array.length){
     let rand = this.getRand(array.length)
-    console.log(`Rand${rand}`)
     if(!newArray.includes(array[rand])){
       newArray.push(array[rand]);
     }
   }
-  console.log(newArray);
   this.setState({gameArray:newArray});
 }
 
 setScore = () => {
  let newScore = this.state.score;
  newScore +=1;
+ this.setHighScore(newScore);
   this.setState({score:newScore});
 }
 
 
  //if current score > high score update high score state
-setHighScore = () =>{
-  if(this.state.score > this.state.highScore){
-   let highScore = this.state.score
-    this.setState({highScore});
+setHighScore = (score) =>{
+  if(score > this.state.highScore){
+    console.log(`Setting High Score`);
+    this.setState({highScore:score});
   }
 }
 
@@ -68,7 +62,6 @@ resetGame = () => {
 
 //When user makes a guess the guess checked against the array of guesses (ID)
 processGuess = id => {
-  console.log(this.state.guesses);
   //if the guess is not in the array of guesses 
   if(!this.state.guesses.includes(id)){
     //it is added
@@ -78,8 +71,6 @@ processGuess = id => {
     //and the score is incrimented
     this.setScore()
     //*high scores is checked
-    this.setHighScore()
-    console.log(this.state.guesses);
   }
 
   else {
