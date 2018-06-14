@@ -1,0 +1,12 @@
+[
+    {
+      "id": 1,
+      "name": "Surley Pentagram",
+      "image": "./images/pentagram.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Mr. Krabs",
+      "image": "./images/sex_panther.png"
+    }
+]
