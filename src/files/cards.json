@@ -6,7 +6,12 @@
     },
     {
       "id": 2,
-      "name": "Mr. Krabs",
+      "name": "San Tan Sex Panther",
       "image": "./images/sex_panther.png"
+    },
+    {
+      "id": 3,
+      "name": "Orange Blossom",
+      "image": "./images/orange_blossom.png"
     }
 ]
