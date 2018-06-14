@@ -70,7 +70,7 @@ processGuess = id => {
       this.setState({guesses:newGuesses, navMessage:"Correct"})
     //and the score is incrimented
     this.setScore()
-    //*high scores is checked
+    this.createGameArray(cards);
   }
 
   else {
