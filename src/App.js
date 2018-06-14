@@ -19,31 +19,32 @@ state = {
 
 }
 
-//returning undefined FIX THIS. It's got some messed up array crap in it 
-//beacuse of the [] 
+//Generate a random number
 getRand = (upper) => {
-  upper[Math.floor(Math.random() * upper)];
-  return (rand)
+  const  min = 0;
+  const max = Math.floor(upper);
+  return Math.floor(Math.random() * (max - min)) + min;
 }
+
 
 createGameArray = array =>{
   console.log`Array ${array}`
   console.log(this.getRand(12));
 }
 
-// createGameArray = array =>{
-//   const newArray= [];
-//   console.log(`newArray = ${newArray}`)
-//   while(newArray.length < array.length){
-//     let rand = this.getRand(array.length)
-//     console.log(`Rand${rand}`)
-//     if(!newArray.includes(array[rand])){
-//       newArray.push(array[rand]);
-//     }
-//   }
-//   console.log(newArray);
-//   this.setState({gameArray:newArray});
-// }
+createGameArray = array =>{
+  const newArray = [];
+  console.log(`newArray = ${newArray}`)
+  while(newArray.length < array.length){
+    let rand = this.getRand(array.length)
+    console.log(`Rand${rand}`)
+    if(!newArray.includes(array[rand])){
+      newArray.push(array[rand]);
+    }
+  }
+  console.log(newArray);
+  this.setState({gameArray:newArray});
+}
 
 setScore = () => {
  let newScore = this.state.score;
