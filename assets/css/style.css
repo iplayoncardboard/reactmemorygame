@@ -1,0 +1,128 @@
+
+img{
+    width: 200px;
+    height: 200px;
+}
+
+
+nav{
+    background-color: rgba(50,47,44, .75);
+    display: block;
+    width:100%;
+    font-family: 'Roboto Slab', serif;
+    margin: 0px auto;
+    min-height: 70px;
+  
+}
+
+
+.card{
+    grid-column: auto;
+    grid-row: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    display: flex;
+    background-color: #ffffff;
+ }
+
+ .card:hover{
+    animation-name: bounce;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+ }
+
+.containter{
+    display: grid;
+    grid-template-rows: auto minmax(100px, 1fr);
+    grid-template-columns: repeat(4, 1fr); 
+    background-image: url('../images/beerBG.jpg');
+    background-repeat: round;
+    
+}
+
+.footer{
+    background-color: rgba(0, 0, 0, .5);
+    grid-column: 1 /-1;
+    text-align: center;
+    color:white;
+    font-family: 'Roboto Slab', serif;  
+    padding: 10px 0;
+
+}
+
+.footer>p>a{
+    color: white;
+    text-decoration: none;
+}
+
+.header{
+    min-height: 500px;
+    background-color: rgba(0, 0, 0, .75);
+    margin-top:0px;
+    background-image: url('../images/2.jpg');
+    background-repeat: round;
+    grid-column: 1 /-1;
+    color: ghostwhite;
+    /* text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);     */
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.header > h1{
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 10;
+}
+
+.header > h2{
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 200px;
+}
+
+.navItem{
+    display: inline-block;
+    width: 33.3%;
+    padding: 26px 0;
+    text-align: center;
+    font-size: 2em;
+    color: ghostwhite;
+    text-shadow: 2px 2px 4px #000000; 
+  
+}
+
+.wrapper{
+    margin: 0px;
+    padding: 0px;
+}
+
+#message{
+    margin:  0px auto;
+}
+
+#name{
+    margin: 0px auto;
+}
+
+#score{
+    margin: 0px auto;
+    
+}
+
+@keyframes nudge {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+    
+    50% {
+      transform: translate(150px, 0);
+    }
+    
+    80% {
+      transform: translate(-150px, 0);
+    }
+  }
+  
