@@ -5,10 +5,11 @@ import './Nav.css'
 
 const Nav = props =>(
     <nav>
-        I'm the fucking Nav Bar
-        <p>{props.message}</p>
-        <p>High Score {props.highScore}</p>
-        <p>Score {props.score}</p>
+        <ul>
+            <li id='name' className='navItem'>Micro Brew Memory</li>
+            <li id='message' className='navItem'>{props.message}</li>
+            <li id='score' className='navItem'>Score: {props.score} | High Score: {props.highScore}</li>
+        </ul>
     </nav>
 )
 

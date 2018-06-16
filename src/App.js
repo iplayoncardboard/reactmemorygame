@@ -16,7 +16,6 @@ state = {
   score: 0,
   highScore: 0,
   navMessage: "Click a Beer to Begin"
-
 }
 
 //Generate a random number
@@ -25,8 +24,6 @@ getRand = (upper) => {
   const max = Math.floor(upper);
   return Math.floor(Math.random() * (max - min)) + min;
 }
-
-
 
 createGameArray = array =>{
   const newArray = [];
@@ -45,7 +42,6 @@ setScore = () => {
  this.setHighScore(newScore);
   this.setState({score:newScore});
 }
-
 
  //if current score > high score update high score state
 setHighScore = (score) =>{
@@ -79,8 +75,6 @@ processGuess = id => {
     this.resetGame();
     this.createGameArray(cards);
   }
-
-
 }
 
 componentDidMount(){

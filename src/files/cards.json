@@ -32,11 +32,31 @@
     {
       "id": 7,
       "name": "Bent Paddle",
-      "image": "./assets/images/bent-paddle.jpg"
+      "image": "./assets/images/bent-paddle2.jpg"
     },
     {
       "id": 8,
       "name": "Rogue Voodoo Doughnut",
       "image": "./assets/images/rogue-voodoo.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Odell",
+      "image": "./assets/images/odell.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Ballast Point",
+      "image": "./assets/images/ballast-point.png"
+    },
+    {
+      "id": 11,
+      "name": "Steven's Point",
+      "image": "./assets/images/point.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Grain Belt Premium",
+      "image": "./assets/images/premo.jpg"
     }
 ]
